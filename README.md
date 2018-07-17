@@ -20,6 +20,39 @@ Although the t-SNE runs have different layouts, the distance between sample pair
 
 To perform a consensus, we need to make sure that the distance between all sample pairs on a t-SNE space has the distribution between runs. 
 
-The figure below shows the distribution of median sample-sample distance of 1,000 runs:
-
 ![](figure/median_distribution.png)
+
+**Figure 1.** the distribution of median sample-sample distance of 1,000 runs. It suggests that normalization is necessary.
+
+![](figure/example_median_distance.png)
+
+**Figure 2.** 2 t-SNE runs with the largest and smallest median sample-sample distance. While they have different structure and orientation, the patterns of sample clustering are similar.
+
+![](figure/example_median_distance.png)
+
+**Figure 3.** The distribution of all sample-sample distance of the 2 runs in the last figure. A simple rescaling will get rid of the most of the difference. The rescaling set the median distance of all runs to 100.
+
+### Consistency
+
+After sample-sample distance is normalized, we can compare it between multiple runs. To simplify analysis, we calculate the distance of selected individual samples to all the other samples across runs. 
+
+![](figure/selected.png)
+
+**Figure 4.** 4 randomly selected samples of specific types:
+
+ - **green:** member of a large cluster
+ - **blue:** member of a small, compact cluster
+ - **red:** sample located on the edge of the t-SNE space
+ - **purple:** orphan sample doesn't belong to any clusters
+ 
+![](figure/selected_distance.png)
+
+**Figure 5.** Mean (solid line) and standard deviation (grey area) of the distance between the 4 selected samples and all other samples. The samples ranked by their mean distance to the selected sample across 1000 runs. 
+
+![](figure/selected_distance_top100.png)
+
+**Figure 6.** Zoom-in of the previous figure to the top 100 nearest samples of the selected sample.
+
+### Consensus
+
+
