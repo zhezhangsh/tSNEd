@@ -28,7 +28,7 @@ To perform a consensus, we need to make sure that the distance between all sampl
 
 **Figure 2.** 2 t-SNE runs with the largest and smallest median sample-sample distance. While they have different structure and orientation, the patterns of sample clustering are similar.
 
-![](figure/example_median_distance.png)
+![](figure/example_normalization.png)
 
 **Figure 3.** The distribution of all sample-sample distance of the 2 runs in the last figure. A simple rescaling will get rid of the most of the difference. The rescaling set the median distance of all runs to 100.
 
