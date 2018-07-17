@@ -55,4 +55,12 @@ After sample-sample distance is normalized, we can compare it between multiple r
 
 ### Consensus
 
+Whether we can reach a consensus of sample-sample distrance from multiple t-SNE runs and what's the number of runs needed to get a repeatable consensus. 
 
+![](figure/tree_avg_dist_multi_runs.png)
+
+**Figure 7.** Average sample-sample distance of N randomly selected t-SNE runs was calculated and the results were used to perform hierarchival clustering of samples. 
+
+![](figure/confusion_matrix.png) 
+
+**Figure 8.** Confusion matrix that compares the classification of samples based on N-run consensus. Samples were grouped into 9 clusters according to their known biological charateristics.
