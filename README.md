@@ -22,4 +22,4 @@ To perform a consensus, we need to make sure that the distance between all sampl
 
 The figure below shows the distribution of median sample-sample distance of 1,000 runs:
 
-![](figure/median_distribution.pdf)
+![](figure/median_distribution.png)
